@@ -53,7 +53,7 @@
         <section class="section  main">
             <div class="container">
                 <h1 class="main-h1">Эффективное решение для вашего бизнеса</h1>
-                <button type="button" class="main-button">Заказать услугу</button>
+                <button type="button" class="main-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="section">
@@ -104,11 +104,17 @@
                 <h2 class="main-h2">Чем мы занимаемся</h2>
                 <ul class="pictures">
                     <li class="pictures-items"><img src="images/img_pc.jpg" width="370" height="294"
-                            alt="картинка ПК" /></li>
+                            alt="картинка ПК" />
+                        <div class="desct-offer">Десктопные приложения</div>
+                    </li>
                     <li class="pictures-items"><img src="images/img_lap.jpg" width="370" height="294"
-                            alt="картинка ноутбука" /></li>
+                            alt="картинка ноутбука" />
+                        <div class="desct-offer">Мобильные приложения</div>
+                    </li>
                     <li class="pictures-items"><img src="images/img_tablet.jpg" width="370" height="294"
-                            alt="картинка планшета" /></li>
+                            alt="картинка планшета" />
+                        <div class="desct-offer">Дизайнерские решения</div>
+                    </li>
                 </ul>
         </section>
         <section class="section our-team">
@@ -325,11 +331,11 @@
             </ul>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-btn">
+            <button type="button" class="modal-btn" data-modal-close>
                 <svg class="close-icon" width="11" height="11">
-                    <use href="./images/symbol-close.svg#icon-close"></use>
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
         </div>
